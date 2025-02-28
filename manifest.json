@@ -1,0 +1,22 @@
+﻿{
+	"name": "MoreFineSky",
+	"description": "晴れる屋の検索結果ページ拡張プラグイン",
+	"version": "1.0",
+	"manifest_version": 3,
+	"icons": {
+		"16": "icon.png",
+		"32": "icon.png",
+		"48": "icon.png",
+		"128": "icon.png"
+	},
+	"content_scripts": [
+		{
+			"matches": [
+				"https://www.hareruyamtg.com/ja/products/search*"
+			],
+			"css": ["css/style.css"],
+			"js": ["event.js"],
+			"run_at": "document_end"
+		}
+	]
+}
